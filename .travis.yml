@@ -25,7 +25,7 @@ after_success:
   - chmod +x linuxdeploy-x86_64.AppImage linuxdeploy-plugin-qt-x86_64.AppImage
   - OUTPUT=gLabels-continuous-x86_64.AppImage ./linuxdeploy-x86_64.AppImage --appdir ./appdir --plugin qt --output appimage
   - wget -c https://github.com/jimevins/uploadtool/raw/master/upload.sh
-  - bash ./upload.sh glabels-continuous-x86_64.AppImage
+  - bash ./upload.sh gLabels-*.AppImage*
 
 branches:
   except:
